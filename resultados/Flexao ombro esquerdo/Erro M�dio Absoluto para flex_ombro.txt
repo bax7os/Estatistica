@@ -1,0 +1,13 @@
+Erro M dio Absoluto para flex_ombro_esquerdo entre o video FRONTAL e o Padr o Ouro: 45.35325033578943
+Erro M dio Absoluto para flex_ombro_esquerdo entre o video LATERAL e o Padr o Ouro: 26.89206294606323
+Correla  o para flex_ombro_esquerdo entre o video FRONTAL e o Padr o Ouro: 0.21096647418393943
+Correla  o para flex_ombro_esquerdo entre o video LATERAL e o Padr o Ouro: -0.05655308406334359
+Angulo maximo padrao ouro flexao ombro esquerdo: 128.88540338920382
+Angulo minimo padrao ouro flexao ombro esquerdo: 19.51793009877136
+Amplitude padrao ouro flexao ombro esquerdo: 109.36747329043246
+Angulo maximo video frontal flexao ombro esquerdo: 73.8222341108352
+Angulo minimo video frontal flexao ombro esquerdo: 36.75246541872173
+Amplitude video frontal flexao ombro esquerdo: 37.06976869211347
+Angulo maximo video lateral flexao ombro esquerdo: 168.52291694039195
+Angulo minimo video lateral flexao ombro esquerdo: 9.963817851976067
+Amplitude video lateral flexao ombro esquerdo: 158.55909908841588

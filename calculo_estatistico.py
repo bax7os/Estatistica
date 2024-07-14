@@ -170,7 +170,7 @@ for nome_arquivo in pasta_ouro_MMSS:
             
 
             ## --------------- ABD OMBRO ESQUERDO -------------------- ##
-            abd_ombro_esquerdo_ouro.append(float(coluna[2]))
+            #abd_ombro_esquerdo_ouro.append(float(coluna[2]))
 
 
             ## --------------- FLEXÃO COTOVELO DIREITO -------------------- ##
@@ -186,7 +186,7 @@ for nome_arquivo in pasta_ouro_MMSS:
 
 
             ## --------------- FLEXAO OMBRO ESQUERDO ---------------- ##
-            #flexao_ombro_esquerdo_ouro.append(float(coluna[12]))
+            flexao_ombro_esquerdo_ouro.append(float(coluna[2]))
         
 ##print(abd_ombro_direito_ouro[2042]) #ultimo abd_ombro_direito_ouro da amanda facom
 #print(abd_ombro_direito_ouro[2043])  #primeiro abd_ombro_direito da amanda pos   
@@ -224,7 +224,7 @@ for nome_arquivo in pasta_video_frontal_MMSS:
             #flexao_ombro_direito_video_frontal.append(float(coluna[9]))
        
             ## --------------- FLEXAO OMBRO ESQUERDO ---------------------- ##
-            #flexao_ombro_esquerdo_video_frontal.append(float(coluna[11]))
+            flexao_ombro_esquerdo_video_frontal.append(float(coluna[1]))
         
 
 
@@ -242,7 +242,7 @@ for nome_arquivo in pasta_video_lateral_MMSS:
             
  
             ## --------------- ABD OMBRO ESQUERDO -------------------- ##
-            abd_ombro_esquerdo_video_lateral.append(float(coluna[1]))
+            #abd_ombro_esquerdo_video_lateral.append(float(coluna[1]))
 
         
             ## --------------- FLEXÃO COTOVELO DIREITO -------------------- ##
@@ -258,7 +258,7 @@ for nome_arquivo in pasta_video_lateral_MMSS:
 
 
             ##---------------- FLEXAO OMBRO ESQUERDO ---------------- ##
-            #flexao_ombro_esquerdo_video_lateral.append(float(coluna[11]))
+            flexao_ombro_esquerdo_video_lateral.append(float(coluna[1]))
 
 
 ################################################################################################################
@@ -284,7 +284,7 @@ for nome_arquivo in pasta_ouro_COLUNA:
             #flexao_tronco_ouro.append(float(coluna[3]))
 
             ## ----------- ROTACAO TRONCO -------------- ##
-            #rotacao_tronco_ouro.append(float(coluna[5]))
+            rotacao_tronco_ouro.append(float(coluna[1]))
 
 
 
@@ -307,7 +307,7 @@ for nome_arquivo in pasta_video_frontal_COLUNA:
 
 
             ## ----------- ROTACAO TRONCO -------------- ##
-            #rotacao_tronco_video_frontal.append(float(coluna[5]))
+            rotacao_tronco_video_frontal.append(float(coluna[1]))
 
 
 
@@ -331,7 +331,7 @@ for nome_arquivo in pasta_video_lateral_COLUNA:
 
 
             ## ----------- ROTACAO TRONCO -------------- ##
-            #rotacao_tronco_video_lateral.append(float(coluna[5]))
+            rotacao_tronco_video_lateral.append(float(coluna[1]))
 
 
 ##############################################################################################################
@@ -356,12 +356,12 @@ for nome_arquivo in pasta_video_lateral_COLUNA:
 # ABDUÇÃO OMBRO ESQUERDO
 
 #erro_abd_ombro_esquerdo_ouro_frontal = erro_medio_absoluto(abd_ombro_esquerdo_ouro, abd_ombro_esquerdo_video_frontal)
-erro_abd_ombro_esquerdo_ouro_lateral = erro_medio_absoluto(abd_ombro_esquerdo_ouro, abd_ombro_esquerdo_video_lateral)
+#erro_abd_ombro_esquerdo_ouro_lateral = erro_medio_absoluto(abd_ombro_esquerdo_ouro, abd_ombro_esquerdo_video_lateral)
 #erro_abd_ombro_esquerdo_frontal_lateral = erro_medio_absoluto(abd_ombro_esquerdo_video_frontal, abd_ombro_esquerdo_video_lateral)
 
 
 #print(f"Erro Médio Absoluto para abd_ombro_esquerdo entre o video FRONTAL e o Padrão Ouro: {erro_abd_ombro_esquerdo_ouro_frontal}")
-print(f"Erro Médio Absoluto para abd_ombro_esquerdo entre o video LATERAL e o Padrão Ouro: {erro_abd_ombro_esquerdo_ouro_lateral}")
+#print(f"Erro Médio Absoluto para abd_ombro_esquerdo entre o video LATERAL e o Padrão Ouro: {erro_abd_ombro_esquerdo_ouro_lateral}")
 #print(f"Erro Médio Absoluto para abd_ombro_esquerdo entre o video FRONTAL e o video LATERAL: {erro_abd_ombro_esquerdo_frontal_lateral}")
  
 
@@ -378,15 +378,61 @@ print(f"Erro Médio Absoluto para abd_ombro_esquerdo entre o video LATERAL e o P
 
 # FLEXÃO OMBRO ESQUERDO
 
-#erro_flex_ombro_esquerdo_ouro_frontal = erro_medio_absoluto(flexao_ombro_esquerdo_ouro, flexao_ombro_esquerdo_video_frontal)
-#erro_flex_ombro_esquerdo_ouro_lateral = erro_medio_absoluto(flexao_ombro_esquerdo_ouro, flexao_ombro_esquerdo_video_lateral)
+erro_flex_ombro_esquerdo_ouro_frontal = erro_medio_absoluto(flexao_ombro_esquerdo_ouro, flexao_ombro_esquerdo_video_frontal)
+erro_flex_ombro_esquerdo_ouro_lateral = erro_medio_absoluto(flexao_ombro_esquerdo_ouro, flexao_ombro_esquerdo_video_lateral)
 #erro_flex_ombro_esquerdo_frontal_lateral = erro_medio_absoluto(flexao_ombro_esquerdo_video_frontal, flexao_ombro_esquerdo_video_lateral)
-'''
+
 print(f"Erro Médio Absoluto para flex_ombro_esquerdo entre o video FRONTAL e o Padrão Ouro: {erro_flex_ombro_esquerdo_ouro_frontal}")
 print(f"Erro Médio Absoluto para flex_ombro_esquerdo entre o video LATERAL e o Padrão Ouro: {erro_flex_ombro_esquerdo_ouro_lateral}")
 #print(f"Erro Médio Absoluto para flex_ombro_esquerdo entre o video FRONTAL e o video LATERAL: {erro_flex_ombro_esquerdo_frontal_lateral}")
 
+corr_flex_ombro_esquedo_ouro_frontal = correlacao(flexao_ombro_esquerdo_ouro, flexao_ombro_esquerdo_video_frontal)
+corr_flex_ombro_esquedo_ouro_lateral = correlacao(flexao_ombro_esquerdo_ouro, flexao_ombro_esquerdo_video_lateral)
+print(f"Correlação para flex_ombro_esquerdo entre o video FRONTAL e o Padrão Ouro: {corr_flex_ombro_esquedo_ouro_frontal}")
+print(f"Correlação para flex_ombro_esquerdo entre o video LATERAL e o Padrão Ouro: {corr_flex_ombro_esquedo_ouro_lateral}")
 
+print(f"Angulo maximo padrao ouro flexao ombro esquerdo: {max(flexao_ombro_esquerdo_ouro)}")
+print(f"Angulo minimo padrao ouro flexao ombro esquerdo: {min(flexao_ombro_esquerdo_ouro)}")
+print(f"Amplitude padrao ouro flexao ombro esquerdo: {max(flexao_ombro_esquerdo_ouro) - min(flexao_ombro_esquerdo_ouro)}")
+
+print(f"Angulo maximo video frontal flexao ombro esquerdo: {max(flexao_ombro_esquerdo_video_frontal)}")
+print(f"Angulo minimo video frontal flexao ombro esquerdo: {min(flexao_ombro_esquerdo_video_frontal)}")
+print(f"Amplitude video frontal flexao ombro esquerdo: {max(flexao_ombro_esquerdo_video_frontal)- min(flexao_ombro_esquerdo_video_frontal)}")
+
+print(f"Angulo maximo video lateral flexao ombro esquerdo: {max(flexao_ombro_esquerdo_video_lateral)}")
+print(f"Angulo minimo video lateral flexao ombro esquerdo: {min(flexao_ombro_esquerdo_video_lateral)}")
+print(f"Amplitude video lateral flexao ombro esquerdo: {max(flexao_ombro_esquerdo_video_lateral)-min(flexao_ombro_esquerdo_video_lateral)}")
+
+print("\n")
+
+# ===================================== ROTAÇÃO DE TRONCO ==============================================
+
+erro_rotacao_tronco_ouro_frontal = erro_medio_absoluto(rotacao_tronco_ouro, rotacao_tronco_video_frontal)
+erro_rotacao_tronco_ouro_lateral = erro_medio_absoluto(rotacao_tronco_ouro, rotacao_tronco_video_lateral)
+#erro_flex_ombro_esquerdo_frontal_lateral = erro_medio_absoluto(flexao_ombro_esquerdo_video_frontal, rotacao_tronco_video_frontal)
+
+print(f"Erro Médio Absoluto para flex_ombro_esquerdo entre o video FRONTAL e o Padrão Ouro: {erro_rotacao_tronco_ouro_frontal}")
+print(f"Erro Médio Absoluto para flex_ombro_esquerdo entre o video LATERAL e o Padrão Ouro: {erro_rotacao_tronco_ouro_lateral}")
+#print(f"Erro Médio Absoluto para flex_ombro_esquerdo entre o video FRONTAL e o video LATERAL: {erro_flex_ombro_esquerdo_frontal_lateral}")
+
+corr_rotacao_tronco_esquedo_ouro_frontal = correlacao(rotacao_tronco_ouro, rotacao_tronco_video_frontal)
+corr_rotacao_tronco_esquedo_ouro_lateral = correlacao(rotacao_tronco_ouro, rotacao_tronco_video_lateral)
+print(f"Correlação para flex_ombro_esquerdo entre o video FRONTAL e o Padrão Ouro: {corr_rotacao_tronco_esquedo_ouro_frontal}")
+print(f"Correlação para flex_ombro_esquerdo entre o video LATERAL e o Padrão Ouro: {corr_rotacao_tronco_esquedo_ouro_lateral}")
+
+print(f"Angulo maximo padrao ouro flexao ombro esquerdo: {max(rotacao_tronco_ouro)}")
+print(f"Angulo minimo padrao ouro flexao ombro esquerdo: {min(rotacao_tronco_ouro)}")
+print(f"Amplitude padrao ouro flexao ombro esquerdo: {max(rotacao_tronco_ouro) - min(rotacao_tronco_ouro)}")
+
+print(f"Angulo maximo video frontal flexao ombro esquerdo: {max(rotacao_tronco_video_frontal)}")
+print(f"Angulo minimo video frontal flexao ombro esquerdo: {min(rotacao_tronco_video_frontal)}")
+print(f"Amplitude video frontal flexao ombro esquerdo: {max(rotacao_tronco_video_frontal)- min(rotacao_tronco_video_frontal)}")
+
+print(f"Angulo maximo video lateral flexao ombro esquerdo: {max(rotacao_tronco_video_lateral)}")
+print(f"Angulo minimo video lateral flexao ombro esquerdo: {min(rotacao_tronco_video_lateral)}")
+print(f"Amplitude video lateral flexao ombro esquerdo: {max(rotacao_tronco_video_lateral)-min(rotacao_tronco_video_lateral)}")
+
+'''
 # FLEXÃO COTOVELO DIREITO
 
 erro_flex_cot_direito_ouro_frontal = erro_medio_absoluto(flexao_cotov_direito_ouro, flexao_cotov_direito_video_frontal)

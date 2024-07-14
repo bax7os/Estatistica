@@ -1,0 +1,13 @@
+Erro M dio Absoluto para rotacao_tronco entre o video FRONTAL e o Padr o Ouro: 20.148079929347773
+Erro M dio Absoluto para rotacao_tronco entre o video LATERAL e o Padr o Ouro: 20.77438275963201
+Correla  o para rotacao_tronco entre o video FRONTAL e o Padr o Ouro: -0.01979835102039288
+Correla  o para rotacao_tronco entre o video LATERAL e o Padr o Ouro: 0.004221145870597012
+Angulo maximo padrao ouro rotacao_tronco: 62.029962823522624
+Angulo minimo padrao ouro rotacao_tronco: 0.06127502980966327
+Amplitude padrao ouro rotacao_tronco: 61.96868779371296
+Angulo maximo video frontal rotacao_tronco: 174.0572038682235
+Angulo minimo video frontal rotacao_tronco: 0.003608679926343306
+Amplitude video frontal rotacao_tronco: 174.05359518829715
+Angulo maximo video lateral rotacao_tronco: 174.0572038682235
+Angulo minimo video lateral rotacao_tronco: 0.03235343284975407
+Amplitude video lateral rotacao_tronco: 174.02485043537374
